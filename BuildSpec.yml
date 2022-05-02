@@ -3,8 +3,5 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws s3 rm s3://harish-rawat/index.html --recursive
-artifacts:
-  files:
-    - '**/*'
-  base-directory: 'target/my-web-app'
+      - aws s3 ls
+
