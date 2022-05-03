@@ -3,5 +3,6 @@ version: 0.2
 phases:
   build:
     commands:
-      - sudo wget https://releases.hashicorp.com/terraform/$TERRAFORM_VERSION/terraform_1.1.0_linux_amd64.zip
-      - ls -ltr
+      - aws --version
+      - python --version
+      - java --version
