@@ -3,4 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - cat /etc/os-release
+      - sudo RUN curl -sSLo /tmp/terrraform.zip https://releases.hashicorp.com/terraform/$TERRAFORM_VERSION/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+      - sudo unzip -d /bin /tmp/terrraform.zip
+      - sudo rm -rf /tmp/terrraform.zip
+      - terraform init
+      - terraform apply --auto-approve
