@@ -3,6 +3,4 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws --version
-      - python --version
-      - java --version
+      - terraform --version
